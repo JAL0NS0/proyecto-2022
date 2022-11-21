@@ -31,7 +31,7 @@
 
                     echo "<div class='row titulo'>
                             <div class='col'>
-                                Buscando: $buscar
+                                <h3> Buscando: $buscar <h3>
                             </div>
                         </div>  
                         <div class='row'>";
