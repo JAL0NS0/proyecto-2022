@@ -1,8 +1,6 @@
 <?php
     include('config/constantes.php');
 
-    echo var_dump($_SESSION);
-
     if( !isset($_SESSION['nombre'])){
         echo "ERROR!!! no ha iniciado sesión.";
         die();
