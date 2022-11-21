@@ -1,5 +1,4 @@
 <?php 
-
     include("config/constantes.php");
 
     $my_email = $_POST["email"];

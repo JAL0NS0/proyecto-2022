@@ -1,3 +1,4 @@
+<?php include("./config/constantes.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="./style/editar-producto.css">
 </head>
 <body>
-    <?php include("./config/constantes.php") ?>
+    
     <?php include('./element/header-2.php');
         $_SESSION["menu"]=2;
     ?>
