@@ -1,8 +1,6 @@
 <?php
     include('config/constantes.php');
 
-    echo var_dump($_SESSION);
-
     if( !isset($_SESSION['nombre'])){
         echo "ERROR!!! no ha iniciado sesión.";
         die();
@@ -51,7 +49,6 @@
                     VALUES ('$descripcion',$valor,$caracteristica_id);";
             
             if ($conn->query($sql) === TRUE) {
-                echo "Opcion $descripcion = $valor guardado correctamente.";
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error . " Guardando Opcion $descripcion = $valor guardado correctamente.";
             }
