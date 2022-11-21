@@ -1,0 +1,23 @@
+.datos_opcion{
+  background-color: red;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+
+  .Nombre-Op{
+    width: 45%;
+  }
+
+  .Valor-Op{
+    width: 45%;
+  }
+  .Eliminar{
+    width: 10%;
+  }
+}
+
+
+.select{
+  background-color: green;
+  padding: 20px;
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.my-carusel {
+  height: 70vh;
+}
+
+.carousel-item {
+  height: 70vh;
+  width: 100%;
+  color: white;
+}
+
+.carousel-caption h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.con-fondo {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#primero {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/diseña.jpg");
+}
+
+#segundo {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/conexion.jpg");
+}
+
+#tercero {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/diseñar.png");
+}
+
+.categoria_bloque {
+  background-color: red;
+  padding: 25px;
+}
+.categoria_bloque a {
+  text-decoration: none;
+  color: white;
+}
+
+.seccion {
+  width: 100% !important;
+  padding-bottom: 20px;
+}
+
+.categorias {
+  background-color: rgb(221, 221, 221);
+}
+
+.div_imagen img {
+  height: 100% !important;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-crear {
+  background-color: #F2B705;
+}
+
+.btn-crear:hover {
+  background-color: #c79600;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.btn-crear{
+    background-color: #F2B705;
+}
+
+.btn-crear:hover{
+    background-color: #c79600;
+    color: white;
+}

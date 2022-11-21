@@ -1,0 +1,48 @@
+header{
+    background-color: white !important;
+}
+
+body{
+    background-color: rgb(249, 249, 249);
+}
+
+nav ul{
+    list-style: none;
+}
+
+#encabezado-titulos{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    #logo{
+        align-items: center;
+        img{
+            width: 45px;
+        }
+    }
+    
+}
+
+.navbar{
+    background-color: #04ADBF !important;
+    padding: 0;
+
+}
+
+#barra-busqueda{
+    width: 600px;
+}
+
+#navbarNav a{
+    color: white !important;
+    padding: 0 5px;
+    margin: 10px 0;
+    border-right: 1px solid #037d8b;
+}
+
+
+#navbarNav a:hover{
+    background-color: #037d8b !important;
+    color: white !important;
+}

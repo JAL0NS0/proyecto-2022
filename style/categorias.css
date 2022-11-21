@@ -1,0 +1,29 @@
+.productos > .row {
+  margin-top: 20px;
+}
+
+.nombre_categoria {
+  border-bottom: rgb(191, 191, 191) 1px solid;
+  margin-bottom: 10px;
+}
+
+figure > a > img {
+  width: 100%;
+  min-height: 200px !important;
+  max-height: 200px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titulo {
+  border-bottom: rgb(191, 191, 191) 3px double;
+}
+
+.producto {
+  max-height: 500px;
+}
+
+.vacio {
+  height: 300px !important;
+  min-height: 50% !important;
+}/*# sourceMappingURL=categorias.css.map */
