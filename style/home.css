@@ -34,10 +34,11 @@
 }
 
 .categoria_bloque {
-  background-color: red;
+  background-color: rgb(84, 84, 84);
   padding: 25px;
 }
-.categoria_bloque a {
+
+.link_categoria {
   text-decoration: none;
   color: white;
 }

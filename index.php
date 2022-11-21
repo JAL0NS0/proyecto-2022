@@ -85,7 +85,7 @@
                         while($categoria = $categorias->fetch_assoc()){
                             ?>
                             <div class="col-sm-6 col-lg-4 my-2">
-                                <a href="buscar.php?s=<?php echo $categoria['nombre'] ?>">
+                                <a href="buscar.php?s=<?php echo $categoria['nombre'] ?>" class="link_categoria">
                                     <div class="categoria_bloque text-center">
                                         <?php echo $categoria['nombre'] ?>
                                     </div>
