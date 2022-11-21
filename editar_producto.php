@@ -1,3 +1,4 @@
+<?php include('config/constantes.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,6 @@
 </head>
 <body>
     <?php
-        include('config/constantes.php');
-
         $nombre_producto = $_SESSION['nombre_producto'];
         echo $nombre_producto;
         echo "<br>";

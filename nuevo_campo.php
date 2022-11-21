@@ -1,3 +1,4 @@
+<?php include('config/constantes.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-        include('config/constantes.php');
-    ?>
     <form action="guardar_campo.php" method="post">
         <div>
             <label for="nombre_campo">Nombre del campo</label>

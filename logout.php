@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    include('config/constantes.php');
     unset($_SESSION['nombre']);
     unset($_SESSION['email']);
     session_unset();

@@ -1,3 +1,6 @@
+<?php 
+        include('config/constantes.php');
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +15,6 @@
     <!-- Custom styles for this template -->
 </head>
 <body>
-    <?php 
-        include('config/constantes.php');
-    ?>
-
     <header>
 
     </header>

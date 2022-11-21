@@ -1,3 +1,4 @@
+<?php include('config/constantes.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +19,6 @@
 </head>
 <body>
     <?php 
-        include('config/constantes.php');
         include('./elementos/header-1.php');
     ?>
 

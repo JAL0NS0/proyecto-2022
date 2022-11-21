@@ -1,3 +1,4 @@
+<?php include('config/constantes.php');?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
