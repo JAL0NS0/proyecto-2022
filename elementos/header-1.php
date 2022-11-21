@@ -1,7 +1,7 @@
 <header > 
     <div class='container-fluid d-flex' id="encabezado-titulos">
         <div id="logo" class="d-flex">
-            <a href="index.php">
+            <a href="index.php" id="casa">
                 <img src="./img/logo.png" alt="logo">
                 <h1>TUDI</h1> 
             </a>            
