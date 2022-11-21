@@ -113,7 +113,7 @@
                                     <a href="./producto.php?id=<?php echo $producto['id']?>"><img src="./subidos/<?php echo $producto['imagen']?>" alt="<?php echo $producto['imagen']?>" class="img-fluid"></a>
                                 </figure>
                                 <div class=" bg-light block-2-text p-4">
-                                    <h3><a href="./producto.php?id=<?php echo $producto['id']?>"><?php echo $producto['nombre']?></a></h3>
+                                    <h3><a style="text-decoration:none;color: black;" href="./producto.php?id=<?php echo $producto['id']?>"><?php echo $producto['nombre']?></a></h3>
                                     <div class="row mb-0">
                                     <div class="text-truncate">
                                         <?php echo $producto['descripcion']?>
@@ -147,7 +147,7 @@
                                       <a href="./producto.php?id=<?php echo $producto['id']?>"><img src="./subidos/<?php echo $producto['imagen']?>" alt="<?php echo $producto['imagen']?>" class="img-fluid"></a>
                                   </figure>
                                   <div class=" bg-light block-2-text p-4">
-                                      <h3><a href="./producto.php?id=<?php echo $producto['id']?>"><?php echo $producto['nombre']?></a></h3>
+                                      <h3><a style="text-decoration:none;color: black;" href="./producto.php?id=<?php echo $producto['id']?>"><?php echo $producto['nombre']?></a></h3>
                                       <div class="row mb-0">
                                         <div class="text-truncate">
                                           <?php echo $producto['descripcion']?>
