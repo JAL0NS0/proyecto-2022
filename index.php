@@ -85,9 +85,11 @@
                         while($categoria = $categorias->fetch_assoc()){
                             ?>
                             <div class="col-sm-6 col-lg-4 my-2">
-                                <div class="categoria_bloque text-center">
-                                    <a href="buscar.php?s=<?php echo $categoria['nombre'] ?>"><?php echo $categoria['nombre'] ?></a>
-                                </div>
+                                <a href="buscar.php?s=<?php echo $categoria['nombre'] ?>">
+                                    <div class="categoria_bloque text-center">
+                                        <?php echo $categoria['nombre'] ?>
+                                    </div>
+                                </a>
                             </div>
                             <?php
                         }
