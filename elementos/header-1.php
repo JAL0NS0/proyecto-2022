@@ -1,8 +1,10 @@
 <header > 
     <div class='container-fluid d-flex' id="encabezado-titulos">
         <div id="logo" class="d-flex">
-            <img src="./img/logo.png" alt="logo">
-            <h1>TUDI</h1> 
+            <a href="index.php">
+                <img src="./img/logo.png" alt="logo">
+                <h1>TUDI</h1> 
+            </a>            
         </div>
         <div id="barra-busqueda">
             <form class="d-flex w-100" action="buscar.php" method="get">
