@@ -1,3 +1,4 @@
+<?php include('config/constantes.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +16,6 @@
     <link rel="stylesheet" href="./style/footer.css">
 </head>
 <body>
-    <?php 
-        include('config/constantes.php');
-    ?>
-
     <?php
         include('./elementos/header-1.php');
 
