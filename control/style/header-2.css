@@ -1,0 +1,28 @@
+#encabezado-titulos {
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 0 20px 0;
+  height: 10vh;
+  min-height: 45px;
+}
+#encabezado-titulos #logo {
+  align-items: center;
+}
+#encabezado-titulos #logo img {
+  width: 35px;
+}
+#encabezado-titulos #logo .texto {
+  margin-left: 10px;
+}
+#encabezado-titulos #logo .texto h1, #encabezado-titulos #logo .texto h3 {
+  margin: 0;
+  padding: 0;
+}
+#encabezado-titulos #logo .texto h1 {
+  font-size: 30px;
+}
+#encabezado-titulos #logo .texto h3 {
+  font-size: 20px;
+}/*# sourceMappingURL=header-2.css.map */

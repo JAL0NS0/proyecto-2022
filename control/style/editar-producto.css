@@ -1,0 +1,85 @@
+.datos img {
+  height: 200px;
+}
+
+.datos-generales ul {
+  padding: 0;
+  margin: 0;
+}
+.datos-generales li {
+  list-style-type: none;
+  padding-bottom: 3px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+.datos-generales li .titulo {
+  font-weight: bolder;
+  width: 20%;
+}
+.datos-generales li .significado {
+  margin-left: 10px;
+  width: 80%;
+}
+
+.caracteristicas {
+  margin: 20px 10px;
+  padding: 0px !important;
+}
+.caracteristicas .lista-opciones .opcion {
+  margin: auto;
+  display: flex;
+}
+.caracteristicas .lista-opciones .opcion .nombre {
+  background-color: red;
+  width: 40% !important;
+}
+.caracteristicas .lista-opciones .opcion .valor {
+  background-color: yellow;
+  width: 10% !important;
+}
+.caracteristicas .tipo {
+  margin: auto;
+  text-align: center;
+}
+
+.caracteristica {
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+}
+
+.listado .opcion {
+  width: 70%;
+}
+.listado .opcion input {
+  border-radius: 10px 0 0 10px !important;
+  border-right: none;
+}
+.listado .precio {
+  width: 20%;
+}
+.listado .precio input {
+  border-radius: 0 !important;
+}
+.listado .borrar a {
+  padding: 16px 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+.not-active {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: grey;
+  border-color: gray;
+}
+
+.titulo-caracteristica {
+  width: 70%;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.botones-caracteristica {
+  width: 30%;
+  margin: 0;
+  padding: 5px 0;
+}/*# sourceMappingURL=editar-producto.css.map */
