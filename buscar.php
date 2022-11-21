@@ -38,7 +38,7 @@
 
                     $query = "SELECT P.id, P.nombre, P.descripcion, P.modificacion, P.imagen, P.precio_base
                     FROM tudi.producto as P, tudi.categoria as C, tudi.pertenece as D 
-                    WHERE D.categoria=C.nombre AND P.id=D.productoid AND ( P.nombre LIKE '%$buscar%' OR P.id LIKE '%$buscar%' OR P.precio_base LIKE '%$buscar%' OR P.descripcion LIKE '%$buscar%')
+                    WHERE D.categoria=C.nombre AND P.id=D.productoid AND ( C.nombre LIKE  '%$buscar%' OR P.nombre LIKE '%$buscar%' OR P.id LIKE '%$buscar%' OR P.precio_base LIKE '%$buscar%' OR P.descripcion LIKE '%$buscar%')
                     ORDER BY modificacion";
                     $productos = $conn->query($query);
                     while($producto = $productos->fetch_assoc()){
