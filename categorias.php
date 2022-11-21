@@ -76,7 +76,7 @@
                         }
                         ?></div>
                           <div class="row text-center">
-                            <div class="col"><a href="" class="btn btn-crear w-50">Ver más</a></div>
+                            <div class="col"><a href="buscar.php?s=<?php echo $nombre ?>" class="btn btn-crear w-50">Ver más</a></div>
                           </div>
                         <?php
                       }                            
