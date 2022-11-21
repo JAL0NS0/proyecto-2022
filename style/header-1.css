@@ -23,7 +23,8 @@ nav ul {
 }
 
 #casa {
-  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 .navbar {
