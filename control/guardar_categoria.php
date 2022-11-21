@@ -1,5 +1,5 @@
 <?php
-    include("./config/constantes.php");
+    include("config/constantes.php");
 
     $nombre = $_POST["nombre_categoria"];
 

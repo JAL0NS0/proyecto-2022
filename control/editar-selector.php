@@ -1,6 +1,5 @@
 <?php
     include("./config/constantes.php");
-    var_dump($_POST);
  
     $producto_id = $_SESSION['id'];
     $tipo_seleccion = $_POST['tipo_seleccion'];
