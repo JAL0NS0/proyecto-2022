@@ -86,7 +86,7 @@
                             ?>
                             <div class="col-sm-6 col-lg-4 my-2">
                                 <div class="categoria_bloque text-center">
-                                    <a href="./buscar.php?cat=<?php echo $categoria['nombre'] ?>"><?php echo $categoria['nombre'] ?></a>
+                                    <a href="buscar.php?s=<?php echo $categoria['nombre'] ?>"><?php echo $categoria['nombre'] ?></a>
                                 </div>
                             </div>
                             <?php
