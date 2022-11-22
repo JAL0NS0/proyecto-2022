@@ -14,7 +14,7 @@ if ([] === $_FILES || !isset($_FILES['blob'])) {
     echo file_get_contents(__DIR__ . '/tpl/upload-form.tpl');
     return;
 }
-$connectionString = $_SERVER['AZURE_STORAGE_CONNECTION_STRING'] ?: '';
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=tudi;AccountKey=cJNhNu7ri2bqbeUR+dffcsS58d0K0WmM8OphpU03EoUurCRytc32Vch7WuflWEz+zwgANYgXvcyV+ASta7zSZw==;EndpointSuffix=core.windows.net";
 if ('' === $connectionString) {
     throw new InvalidArgumentException(
         'Please set the environment variable STORAGE_CONN_STRING with the Azure Blob Connection String'
