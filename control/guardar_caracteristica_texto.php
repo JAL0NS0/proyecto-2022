@@ -13,7 +13,6 @@
     $producto_id = $_SESSION["id"];
 
     $sql = "SELECT * FROM tudi.caracteristica WHERE productoid=$producto_id AND nombre='$nombre';";
-    echo $sql."<br>";
 
     $resultado = $conn->query($sql);
 
@@ -22,12 +21,10 @@
         echo "<a href='editar-producto.php?id=$producto_id'> Salga de aquí </a>";
         die();
     }
-    echo "No existe la caracteristica en el producto, SE PUEDE INSERTAR<br>";
 
     $sql = "INSERT INTO `tudi`.`caracteristica` (`productoid`,`nombre`)
             VALUES($producto_id,'$nombre');";
 
-    echo $sql;
     if (!$conn->query($sql)) {
         echo "Error al insertar caracteristica: " . $sql . "<br>" . $conn->error;
         echo "<a href='editar-producto.php?id=$producto_id'> Salga de aquí </a>";
@@ -39,7 +36,6 @@
     $sql = "INSERT INTO `tudi`.`texto`(`id`,`costo`,`maximo`,`minimo`,`separacion`)
             VALUES ($caracteristica_id,$costo,$long_max,$long_min,$tipo_costo);";
 
-    echo $sql;
     if (!$conn->query($sql)) {
         echo "Error al insertar caracteristica: " . $sql . "<br>" . $conn->error;
         echo "<a href='editar-producto.php?id=$producto_id'> Salga de aquí </a>";
@@ -47,9 +43,6 @@
     }
 
     $selector_id=mysqli_insert_id($conn);
-    echo "... <br>";
-    echo "... <br>";
-    echo "Caracteristica creada exitosamente $selector_id <br>";
     header("Location: editar-producto.php?id=$producto_id");
 
     $conn->close();
