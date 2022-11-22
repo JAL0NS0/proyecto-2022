@@ -23,4 +23,32 @@ if ('' === $connectionString) {
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 $blobService = new AzureBlobService($blobClient);
 
+
+
+$containerName = 'AzurePHPDemo';
+try {
+    $blobService->addBlobContainer($containerName);
+    $blobService->setBlobContainerAcl($containerName, AzureBlobService::ACL_BLOB);
+} catch (ServiceException $serviceException) {
+    // Log the exception, most likely because the container already exists
+}
+
+try {
+    $fileName = $blobService->uploadBlob($containerName, $_FILES['blob']);
+} catch (ServiceException $serviceException) {
+    // Log the exception, most likely connectivity issue
+}
+
+$fileLink = sprintf(
+    '%s/%s/%s',
+    'https://azurephpstorage.blob.core.windows.net',
+    strtolower($containerName),
+    $fileName
+);
+echo sprintf(
+    'Find the uploaded file at <a href="%s" target="_blank">%s</a>.',
+    $fileLink,
+    $fileLink
+);
+echo '<br><a href="/">Reset</a>';
 ?>
