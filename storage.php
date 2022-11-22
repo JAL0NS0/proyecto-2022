@@ -8,7 +8,7 @@ use AzurePHP\Service\AzureBlobService;
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 if ([] === $_FILES || !isset($_FILES['blob'])) {
     echo file_get_contents(__DIR__ . 'tpl/upload-form.tpl');
