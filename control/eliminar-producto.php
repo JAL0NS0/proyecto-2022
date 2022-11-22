@@ -4,6 +4,13 @@
 
     echo "INICIO SESSION <br>";
 
+    //conexión con db
+    $host= "tudi-server.mysql.database.azure.com";
+    $username = "admin4254";
+    $password = "proyecto-2022";
+    $db_name = "tudi";
+    $pagina = "https://tudi.azurewebsites.net";
+
     $conn = mysqli_init();
     echo "QUE PASÓ"; 
     mysqli_ssl_set($conn,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
