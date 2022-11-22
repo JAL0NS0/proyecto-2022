@@ -30,7 +30,7 @@
                     $query = "INSERT INTO `tudi`.`producto` (`nombre`,`descripcion`,`modificacion`,`imagen`,`precio_base`,`solicitudes`)
                     VALUES ('$nombre','$descripcion','".date('Y-m-d h:i:s', time())."','$foto_nombre',$costo_base,0);";
 
-                    if ($conn->query($query) === TRUE) {
+                    if ($conn->query($query)) {
                         $_SESSIO['id'] = $conn->insert_id;
                         $query = "INSERT INTO `tudi`.`pertenece`(`productoid`,`categoria`)
                         VALUES(".$_SESSIO['id'].",'$categoria');";

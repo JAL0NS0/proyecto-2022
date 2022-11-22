@@ -1,5 +1,6 @@
 <?php
-    include("./config/constantes.php");
+    include("config/constantes.php");
+    var_dump($_SESSION);
     $id =$_GET["id"];
 
 
