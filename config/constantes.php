@@ -1,6 +1,8 @@
 <?php 
     ini_set('session.save_path',realpath(dirname($_SERVER['DOCUMENT_ROOT']) . '/../session'));
     session_start();
+    error_reporting(E_ALL);
+        ini_set('display_errors', 'On');
 
     //Constantes
 
