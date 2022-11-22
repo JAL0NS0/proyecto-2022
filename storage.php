@@ -1,4 +1,6 @@
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
 declare(strict_types=1);
 
 use AzurePHP\Service\AzureBlobService;
