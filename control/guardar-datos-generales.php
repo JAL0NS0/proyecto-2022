@@ -1,5 +1,7 @@
 <?php
         include('config/constantes.php');
+        error_reporting(E_ALL);
+        ini_set('display_errors', 'On');
         
         if( isset($_POST['datos']) ){
             $nombre = $_POST['nombre_producto'];
@@ -39,6 +41,7 @@
                         SET num_productos = num_productos+1 WHERE `nombre` = '$categoria';";
 
                         if ($conn->query($query) and $conn->query($query2)) {
+                            die();
                             header("Location: editar-producto.php?id=".$_SESSIO['id']);
                         }else{
                             echo "Error: " . $query . "<br>" . $conn->error;
