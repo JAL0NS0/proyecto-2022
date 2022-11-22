@@ -11,7 +11,7 @@ use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
 require_once __DIR__ . '/vendor/autoload.php';
 
 if ([] === $_FILES || !isset($_FILES['blob'])) {
-    echo file_get_contents(__DIR__ . 'tpl/upload-form.tpl');
+    echo file_get_contents(__DIR__ . '/tpl/upload-form.tpl');
     return;
 }
 $connectionString = $_SERVER['AZURE_STORAGE_CONNECTION_STRING'] ?: '';
