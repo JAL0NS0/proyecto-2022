@@ -4,9 +4,12 @@
 
     echo "INICIO SESSION <br>";
 
-    $conn = mysqli_init(); 
+    $conn = mysqli_init();
+    echo "QUE PASÓ"; 
     mysqli_ssl_set($conn,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+    echo "AQUÍ";
     mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306, MYSQLI_CLIENT_SSL);
+    echo "SE ACABÓ <br>";
     
     // Check connection
     if(mysqli_connect_errno()){
