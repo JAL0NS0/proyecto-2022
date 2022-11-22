@@ -7,7 +7,6 @@
     }
 
     $nombre = $_POST['nombre_caracteristica']; 
-    $tipo_valor = $_POST['tipo_valor'];
     $producto_id = $_SESSION['id'];
     $tipo_seleccion = $_POST['tipo_seleccion'];
 
