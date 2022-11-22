@@ -35,13 +35,10 @@
         echo "Error al eliminar el producto con codigo $id";
     }
 
-    //echo "DELETE DEL PERTENECE <br>";
-
     $query="DELETE FROM producto WHERE id=$id";
 
     if ($conn->query($query)) {
-        echo "<a href='productos.php'> BORRAR</a>";
-        //header("Location: ./productos.php");   
+        header("Location: productos.php");   
     } else {
         echo "Error al eliminar el producto con codigo $id";
     }
