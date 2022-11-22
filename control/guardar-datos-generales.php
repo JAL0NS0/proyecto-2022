@@ -25,7 +25,7 @@
 
                 if(in_array($tipo,$tipos_permitidos)){
 
-                    move_uploaded_file($file['tmp_name'], '/subidos/'.$foto_nombre);
+                    move_uploaded_file($file['tmp_name'], './subidos/'.$foto_nombre);
 
                     $_SESSION['nombre_producto']= $nombre;
                     $query = "INSERT INTO `tudi`.`producto` (`nombre`,`descripcion`,`modificacion`,`imagen`,`precio_base`,`solicitudes`)
